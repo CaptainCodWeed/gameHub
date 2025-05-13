@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Tanha;
+    src: url('/fonts/Tanha.eot');
+    src: url('Tanha.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Tanha.woff') format('woff'),
+        url('/fonts/Tanha.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Tanha', sans-serif;
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.2);
+}
+
+.search-results {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.search-input:focus+.search-results {
+    display: block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background-color: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+}
+
+.product-gallery-thumbnail:hover {
+    border-color: #ef4444;
+}
+
+.star-rating .star {
+    color: #6b7280;
+}
+
+.star-rating .star.active {
+    color: #f59e0b;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .swiper-slide-content {
+        top: 10%;
+        left: 5%;
+    }
+}

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسلایدر گیمینگ</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-900">
+    <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold text-red-500">Game<span class="text-blue-500">Hub</span></a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="relative w-1/3 hidden md:block">
+                <input type="text" placeholder="جستجوی محصولات..."
+                    class="search-input w-full bg-gray-800 text-white px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500">
+                <div class="search-results mt-1 bg-gray-800 rounded-lg shadow-lg p-2">
+                    <div class="p-2 hover:bg-gray-700 cursor-pointer flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="محصول" class="ml-2 rounded">
+                        <div>
+                            <p class="text-sm">ماوس گیمینگ مدل X200</p>
+                            <p class="text-xs text-gray-400">قیمت: ۱,۲۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                    <div class="p-2 hover:bg-gray-700 cursor-pointer flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="محصول" class="ml-2 rounded">
+                        <div>
+                            <p class="text-sm">کیبورد مکانیکال مدل K750</p>
+                            <p class="text-xs text-gray-400">قیمت: ۲,۵۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                    <div class="p-2 text-center text-sm text-gray-400">
+                        نمایش همه نتایج (۱۲ مورد)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation and User Actions -->
+            <div class="flex items-center space-x-6 space-x-reverse">
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8 space-x-reverse">
+                        <li><a href="#" class="text-white hover:text-red-500 transition">خانه</a></li>
+                        <li><a href="#" class="text-white hover:text-red-500 transition">فروشگاه</a></li>
+                        <li><a href="#" class="text-white hover:text-red-500 transition">درباره ما</a></li>
+                        <li><a href="#" class="text-white hover:text-red-500 transition">تماس با ما</a></li>
+                    </ul>
+                </nav>
+
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="relative">
+                        <a href="#" class="text-white hover:text-red-500 text-xl">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <span class="cart-count">3</span>
+                    </div>
+
+                    <div class="relative">
+                        <a href="#" class="text-white hover:text-red-500 text-xl">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <span class="cart-count">5</span>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition">ورود
+                            / ثبت‌نام</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-gray-800 hidden" id="mobileMenu">
+        <div class="container mx-auto px-4 py-2">
+            <a href="#" class="block py-2 text-white hover:text-red-500">خانه</a>
+            <a href="#" class="block py-2 text-white hover:text-red-500">فروشگاه</a>
+            <a href="#" class="block py-2 text-white hover:text-red-500">درباره ما</a>
+            <a href="#" class="block py-2 text-white hover:text-red-500">تماس با ما</a>
+            <a href="#" class="block py-2 text-white hover:text-red-500">ورود / ثبت‌نام</a>
+        </div>
+    </div>
+
+    <!-- Hero Slider -->
+    <section class="relative">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="/imge/photo-1626218174358-7769486c4b79.avif" alt="اسلاید ۱" class="w-full h-auto">
+                    <div class="swiper-slide-content text-white">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">تخفیف‌های ویژه گیمینگ</h2>
+                        <p class="mb-6 text-sm md:text-base">تا ۴۰٪ تخفیف روی تمام محصولات گیمینگ فقط تا پایان این هفته
+                        </p>
+                        <a href="#"
+                            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition inline-block">مشاهده
+                            محصولات</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="/imge/high-angle-gaming-setup-indoors.jpg" alt="اسلاید ۲" class="w-full h-auto">
+                    <div class="swiper-slide-content text-white">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">بهترین لپ‌تاپ‌های مخصوص بازی</h2>
+                        <p class="mb-6 text-sm md:text-base">جدیدترین مدل‌های ۲۰۲۵ با قدرت بالا و طراحی شیک</p>
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition inline-block">خرید
+                            لپ‌تاپ</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="/imge/premium_photo-1671439543718-9e4d009827e8.png" alt="اسلاید ۳" class="w-full h-auto">
+                    <div class="swiper-slide-content text-white">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">سیستم‌های اسمبل‌شده مخصوص گیم</h2>
+                        <p class="mb-6 text-sm md:text-base">با کارت گرافیک‌های قدرتمند و خنک‌کننده‌های حرفه‌ای</p>
+                        <a href="#"
+                            class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition inline-block">سفارش
+                            سیستم</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Categories -->
+    <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">دسته‌بندی محصولات</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <a href="playstation.html"
+                    class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative">
+                        <img src="/imge/1-18.jpg"
+                            alt="کنسول‌های بازی" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <span class="text-white font-bold">مشاهده محصولات</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center" ><i class="fas fa-playstation fa-xs fa-fw"></i>کنسول‌های بازی</h3>
+                    </div>
+                </a>
+
+                <!-- Category 2 -->
+                <a href="#"
+                    class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=لوازم جانبی کامپیوتر"
+                            alt="لوازم جانبی کامپیوتر" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <span class="text-white font-bold">مشاهده محصولات</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center">لوازم جانبی کامپیوتر</h3>
+                    </div>
+                </a>
+
+                <!-- Category 3 -->
+                <a href="#"
+                    class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=لپ‌تاپ و لوازم جانبی"
+                            alt="لپ‌تاپ و لوازم جانبی" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <span class="text-white font-bold">مشاهده محصولات</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center">لپ‌تاپ و لوازم جانبی</h3>
+                    </div>
+                </a>
+
+                <!-- Category 4 -->
+                <a href="#"
+                    class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=ریگ ماینینگ" alt="ریگ ماینینگ"
+                            class="w-full h-48 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <span class="text-white font-bold">مشاهده محصولات</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-center">ریگ ماینینگ</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-12 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">محصولات ویژه</h2>
+                <a href="#" class="text-red-500 hover:text-red-400 transition">مشاهده همه</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=PlayStation+5"
+                            alt="PlayStation 5" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">ویژه</div>
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">پلی‌استیشن 5 نسخه دیجیتال</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۱۲ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۲۴,۹۰۰,۰۰۰</span>
+                                <span class="text-gray-400 text-sm line-through mr-1">۲۷,۵۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Mouse" alt="ماوس گیمینگ"
+                            class="w-full h-64 object-cover">
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ماوس گیمینگ مدل X200</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۲۳ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۱,۲۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Laptop"
+                            alt="لپ‌تاپ گیمینگ" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">جدید</div>
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">لپ‌تاپ گیمینگ ایسوس مدل TUF</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۸ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۴۵,۹۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Mining+Rig" alt="ریگ ماینینگ"
+                            class="w-full h-64 object-cover">
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ریگ ماینینگ ۶ کارت گرافیک</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۵ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۱۸۵,۰۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banners -->
+    <section class="py-8 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Banner 1 -->
+                <div class="relative rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/800x300/111827/e5e7eb?text=تخفیف‌های پایان فصل"
+                        alt="تخفیف‌های پایان فصل" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-2xl font-bold mb-2">تخفیف‌های پایان فصل</h3>
+                            <p class="mb-4">تا ۳۰٪ تخفیف روی محصولات منتخب</p>
+                            <a href="#"
+                                class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition">همین
+                                حالا بخرید</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 2 -->
+                <div class="relative rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/800x300/111827/e5e7eb?text=گارانتی طلایی" alt="گارانتی طلایی"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <div class="text-center text-white p-4">
+                            <h3 class="text-2xl font-bold mb-2">گارانتی طلایی</h3>
+                            <p class="mb-4">۲۴ ماه گارانتی بدون قید و شرط</p>
+                            <a href="#"
+                                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">اطلاعات
+                                بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling -->
+    <section class="py-12 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">پرفروش‌ترین محصولات</h2>
+                <a href="#" class="text-red-500 hover:text-red-400 transition">مشاهده همه</a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Xbox+Series+X"
+                            alt="Xbox Series X" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">پرفروش</div>
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">ایکس‌باکس سری X 1TB</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۱۸ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۲۱,۵۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Keyboard"
+                            alt="کیبورد گیمینگ" class="w-full h-64 object-cover">
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">کیبورد مکانیکال مدل K750</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۲۷ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۲,۵۰۰,۰۰۰</span>
+                                <span class="text-gray-400 text-sm line-through mr-1">۳,۲۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Headset"
+                            alt="هدست گیمینگ" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">پرفروش</div>
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">هدست گیمینگ مدل H300</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۱۵ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۱,۸۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Monitor"
+                            alt="مانیتور گیمینگ" class="w-full h-64 object-cover">
+                        <button
+                            class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">مانیتور گیمینگ ۲۷ اینچی</h3>
+                        <div class="flex items-center mb-2 star-rating">
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star active"><i class="fas fa-star"></i></span>
+                            <span class="star"><i class="fas fa-star"></i></span>
+                            <span class="text-xs text-gray-400 mr-1">(۹ نظر)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-red-500 font-bold text-lg">۸,۹۰۰,۰۰۰</span>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex items-start">
+                    <div class="text-blue-500 text-3xl mr-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">گارانتی معتبر</h3>
+                        <p class="text-gray-400">تمام محصولات ما دارای گارانتی رسمی و خدمات پس از فروش معتبر هستند.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex items-start">
+                    <div class="text-red-500 text-3xl mr-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">تحویل سریع</h3>
+                        <p class="text-gray-400">ارسال سریع به تمام نقاط کشور در کمترین زمان ممکن.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex items-start">
+                    <div class="text-green-500 text-3xl mr-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">پشتیبانی ۲۴/۷</h3>
+                        <p class="text-gray-400">پشتیبانی تلفنی و آنلاین در تمام ساعات شبانه‌روز.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-blue-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">عضویت در خبرنامه</h2>
+            <p class="mb-6 max-w-2xl mx-auto">با عضویت در خبرنامه از آخرین تخفیف‌ها، محصولات جدید و پیشنهادات ویژه ما
+                مطلع شوید.</p>
+
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="آدرس ایمیل شما"
+                    class="flex-grow bg-white text-gray-800 px-4 py-3 rounded-r-lg focus:outline-none">
+                <button type="submit"
+                    class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-l-lg transition">عضویت</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">درباره GameHub</h3>
+                    <p class="text-gray-400 mb-4">فروشگاه تخصصی محصولات گیمینگ و دیجیتال با بیش از ۱۰ سال سابقه درخشان
+                        در خدمت‌رسانی به مشتریان.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition"><i
+                                class="fab fa-telegram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition"><i
+                                class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition"><i
+                                class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">لینک‌های سریع</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">خانه</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">فروشگاه</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">درباره ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">تماس با ما</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">قوانین و مقررات</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">دسته‌بندی‌ها</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">کنسول‌های بازی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">لوازم جانبی کامپیوتر</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">لپ‌تاپ و لوازم جانبی</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">کامپیوتر گیمینگ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-red-500 transition">ریگ ماینینگ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">تماس با ما</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-2 text-red-500"></i>
+                            تهران، خیابان آزادی، پلاک ۱۲۳
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-2 text-blue-500"></i>
+                            ۰۲۱-۱۲۳۴۵۶۷۸
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-2 text-yellow-500"></i>
+                            info@gamehub.ir
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© ۱۴۰۲ تمام حقوق برای فروشگاه GameHub محفوظ است.</p>
+                <div class="flex space-x-4 space-x-reverse">
+                    <img src="https://via.placeholder.com/50x30/111827/e5e7eb?text=پرداخت" alt="درگاه پرداخت"
+                        class="h-8">
+                    <img src="https://via.placeholder.com/50x30/111827/e5e7eb?text=پرداخت" alt="درگاه پرداخت"
+                        class="h-8">
+                    <img src="https://via.placeholder.com/50x30/111827/e5e7eb?text=پرداخت" alt="درگاه پرداخت"
+                        class="h-8">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden" id="quickViewModal">
+        <div class="bg-gray-900 rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="relative">
+                <button class="absolute top-4 left-4 text-white text-2xl z-10 hover:text-red-500 transition"
+                    id="closeQuickView">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+                    <!-- Product Gallery -->
+                    <div>
+                        <div class="mb-4">
+                            <img src="https://via.placeholder.com/500x500/111827/e5e7eb?text=Product+Image" alt="محصول"
+                                class="w-full rounded-lg" id="quickViewMainImage">
+                        </div>
+                        <div class="grid grid-cols-4 gap-2">
+                            <div class="product-gallery-thumbnail border-2 border-transparent rounded cursor-pointer">
+                                <img src="https://via.placeholder.com/100x100/111827/e5e7eb?text=Thumb+1"
+                                    alt="تصویر کوچک ۱" class="w-full">
+                            </div>
+                            <div class="product-gallery-thumbnail border-2 border-transparent rounded cursor-pointer">
+                                <img src="https://via.placeholder.com/100x100/111827/e5e7eb?text=Thumb+2"
+                                    alt="تصویر کوچک ۲" class="w-full">
+                            </div>
+                            <div class="product-gallery-thumbnail border-2 border-transparent rounded cursor-pointer">
+                                <img src="https://via.placeholder.com/100x100/111827/e5e7eb?text=Thumb+3"
+                                    alt="تصویر کوچک ۳" class="w-full">
+                            </div>
+                            <div class="product-gallery-thumbnail border-2 border-transparent rounded cursor-pointer">
+                                <img src="https://via.placeholder.com/100x100/111827/e5e7eb?text=Thumb+4"
+                                    alt="تصویر کوچک ۴" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-2" id="quickViewTitle">نام محصول</h2>
+                        <div class="flex items-center mb-4">
+                            <div class="star-rating">
+                                <span class="star active"><i class="fas fa-star"></i></span>
+                                <span class="star active"><i class="fas fa-star"></i></span>
+                                <span class="star active"><i class="fas fa-star"></i></span>
+                                <span class="star active"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <span class="text-sm text-gray-400 mr-2">(۱۲ نظر)</span>
+                        </div>
+
+                        <div class="mb-6">
+                            <span class="text-red-500 font-bold text-2xl" id="quickViewPrice">۱۲,۰۰۰,۰۰۰ تومان</span>
+                            <span class="text-gray-400 text-sm line-through mr-2" id="quickViewOldPrice">۱۵,۰۰۰,۰۰۰
+                                تومان</span>
+                        </div>
+
+                        <p class="text-gray-400 mb-6" id="quickViewDescription">
+                            توضیحات کامل محصول در این قسمت نمایش داده می‌شود. این محصول دارای ویژگی‌های منحصر به فردی
+                            است که آن را از سایر محصولات مشابه متمایز می‌کند.
+                        </p>
+
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2">ویژگی‌های اصلی:</h4>
+                            <ul class="text-gray-400 space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 ml-2"></i>
+                                    <span>گارانتی ۲۴ ماهه طلایی</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 ml-2"></i>
+                                    <span>ارسال رایگان به تمام نقاط کشور</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 ml-2"></i>
+                                    <span>پشتیبانی ۲۴ ساعته</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex items-center mb-6">
+                            <span class="ml-4">تعداد:</span>
+                            <div class="flex items-center border border-gray-700 rounded">
+                                <button class="px-3 py-1 text-xl hover:bg-gray-800">-</button>
+                                <span class="px-4">1</span>
+                                <button class="px-3 py-1 text-xl hover:bg-gray-800">+</button>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4 space-x-reverse">
+                            <button
+                                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition flex-grow">
+                                <i class="fas fa-shopping-cart ml-2"></i>
+                                افزودن به سبد خرید
+                            </button>
+                            <button class="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-lg transition">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden" id="loginModal">
+        <div class="bg-gray-900 rounded-lg max-w-md w-full p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">ورود به حساب کاربری</h2>
+                <button class="text-gray-400 hover:text-white text-2xl" id="closeLoginModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form>
+                <div class="mb-4">
+                    <label for="loginEmail" class="block mb-2">آدرس ایمیل</label>
+                    <input type="email" id="loginEmail"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <div class="mb-6">
+                    <label for="loginPassword" class="block mb-2">رمز عبور</label>
+                    <input type="password" id="loginPassword"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <a href="#" class="text-sm text-blue-500 hover:text-blue-400 mt-2 inline-block">رمز عبور را فراموش
+                        کرده‌ام</a>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg transition mb-4">ورود</button>
+
+                <div class="text-center">
+                    <p class="text-gray-400">حساب کاربری ندارید؟ <a href="#" class="text-blue-500 hover:text-blue-400"
+                            id="showRegisterForm">ثبت‌نام کنید</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden" id="registerModal">
+        <div class="bg-gray-900 rounded-lg max-w-md w-full p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold">ثبت‌نام جدید</h2>
+                <button class="text-gray-400 hover:text-white text-2xl" id="closeRegisterModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form>
+                <div class="mb-4">
+                    <label for="registerName" class="block mb-2">نام کامل</label>
+                    <input type="text" id="registerName"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <div class="mb-4">
+                    <label for="registerEmail" class="block mb-2">آدرس ایمیل</label>
+                    <input type="email" id="registerEmail"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <div class="mb-4">
+                    <label for="registerPhone" class="block mb-2">شماره تلفن</label>
+                    <input type="tel" id="registerPhone"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <div class="mb-6">
+                    <label for="registerPassword" class="block mb-2">رمز عبور</label>
+                    <input type="password" id="registerPassword"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <div class="mb-6">
+                    <label class="flex items-center">
+                        <input type="checkbox"
+                            class="form-checkbox bg-gray-800 border-gray-700 rounded text-red-500 ml-2">
+                        <span class="text-sm">با <a href="#" class="text-blue-500 hover:text-blue-400">قوانین و
+                                مقررات</a> موافقم</span>
+                    </label>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition mb-4">ثبت‌نام</button>
+
+                <div class="text-center">
+                    <p class="text-gray-400">قبلاً ثبت‌نام کرده‌اید؟ <a href="#" class="text-red-500 hover:text-red-400"
+                            id="showLoginForm">وارد شوید</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="fixed inset-y-0 left-0 bg-gray-900 shadow-xl z-50 w-80 transform -translate-x-full transition duration-300"
+        id="cartSidebar">
+        <div class="h-full flex flex-col">
+            <div class="p-4 border-b border-gray-800 flex justify-between items-center">
+                <h3 class="text-lg font-bold">سبد خرید شما</h3>
+                <button class="text-gray-400 hover:text-white" id="closeCartSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <!-- Cart Item 1 -->
+                <div class="flex mb-4 pb-4 border-b border-gray-800">
+                    <div class="w-20 flex-shrink-0">
+                        <img src="https://via.placeholder.com/80x80/111827/e5e7eb?text=Product" alt="محصول"
+                            class="w-full rounded">
+                    </div>
+                    <div class="mr-3 flex-grow">
+                        <h4 class="font-medium">ماوس گیمینگ مدل X200</h4>
+                        <div class="flex justify-between items-center mt-1">
+                            <span class="text-red-500">۱,۲۰۰,۰۰۰ تومان</span>
+                            <div class="flex items-center">
+                                <button class="px-1 text-gray-400 hover:text-white">-</button>
+                                <span class="px-2">1</span>
+                                <button class="px-1 text-gray-400 hover:text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-red-500">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="flex mb-4 pb-4 border-b border-gray-800">
+                    <div class="w-20 flex-shrink-0">
+                        <img src="https://via.placeholder.com/80x80/111827/e5e7eb?text=Product" alt="محصول"
+                            class="w-full rounded">
+                    </div>
+                    <div class="mr-3 flex-grow">
+                        <h4 class="font-medium">کیبورد مکانیکال مدل K750</h4>
+                        <div class="flex justify-between items-center mt-1">
+                            <span class="text-red-500">۲,۵۰۰,۰۰۰ تومان</span>
+                            <div class="flex items-center">
+                                <button class="px-1 text-gray-400 hover:text-white">-</button>
+                                <span class="px-2">1</span>
+                                <button class="px-1 text-gray-400 hover:text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-red-500">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4 border-t border-gray-800">
+                <div class="flex justify-between mb-4">
+                    <span>جمع کل:</span>
+                    <span class="font-bold">۳,۷۰۰,۰۰۰ تومان</span>
+                </div>
+                <a href="#"
+                    class="block bg-red-600 hover:bg-red-700 text-white text-center py-3 rounded-lg transition mb-2">تسویه
+                    حساب</a>
+                <a href="#"
+                    class="block bg-gray-800 hover:bg-gray-700 text-white text-center py-3 rounded-lg transition">مشاهده
+                    سبد خرید</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Init -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
