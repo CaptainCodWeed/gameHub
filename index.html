@@ -12,8 +12,8 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
@@ -37,7 +37,7 @@
                             <p class="text-xs text-gray-400">قیمت: ۱,۲۰۰,۰۰۰ تومان</p>
                         </div>
                     </div>
-                    <div class="hidden p-2 hover:bg-gray-700 cursor-pointer flex items-center">
+                    <div class="p-2 hover:bg-gray-700 cursor-pointer flex items-center">
                         <img src="https://via.placeholder.com/40" alt="محصول" class="ml-2 rounded">
                         <div>
                             <p class="text-sm">کیبورد مکانیکال مدل K750</p>
@@ -62,18 +62,18 @@
                 </nav>
 
                 <div class="flex items-center space-x-4 space-x-reverse">
-                    <div class="relative">
-                        <a href="#" class="text-white hover:text-red-500 text-xl">
+                    <div class="relative" id="heart">
+                        <a class="text-white hover:text-red-500 text-xl">
                             <i class="far fa-heart"></i>
                         </a>
-                        <span class="cart-count">3</span>
+                        <span class="cart-count">1</span>
                     </div>
 
-                    <div class="relative">
+                    <div class="relative" id="shopping">
                         <a href="#" class="text-white hover:text-red-500 text-xl">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <span class="cart-count">5</span>
+                        <span class="cart-count">1</span>
                     </div>
 
                     <div class="hidden md:block">
@@ -157,15 +157,15 @@
                 <a href="playstation.html"
                     class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
                     <div class="relative">
-                        <img src="/imge/1-18.jpg"
-                            alt="کنسول‌های بازی" class="w-full h-48 object-cover">
+                        <img src="/imge/1-18.jpg" alt="کنسول‌های بازی" class="w-full h-48 object-cover">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                             <span class="text-white font-bold">مشاهده محصولات</span>
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold text-center" ><i class="fas fa-playstation fa-xs fa-fw"></i>کنسول‌های بازی</h3>
+                        <h3 class="text-lg font-semibold text-center"><i
+                                class="fas fa-playstation fa-xs fa-fw"></i>کنسول‌های بازی</h3>
                     </div>
                 </a>
 
@@ -173,7 +173,7 @@
                 <a href="#"
                     class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=لوازم جانبی کامپیوتر"
+                        <img src="/imge/computer-keyboard-with-mouse-cassette-pink-background.jpg"
                             alt="لوازم جانبی کامپیوتر" class="w-full h-48 object-cover">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
@@ -189,8 +189,8 @@
                 <a href="#"
                     class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=لپ‌تاپ و لوازم جانبی"
-                            alt="لپ‌تاپ و لوازم جانبی" class="w-full h-48 object-cover">
+                        <img src="/imge/modern-stationary-collection-arrangement.jpg" alt="لپ‌تاپ و لوازم جانبی"
+                            class="w-full h-48 object-cover">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                             <span class="text-white font-bold">مشاهده محصولات</span>
@@ -205,8 +205,7 @@
                 <a href="#"
                     class="category-card bg-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition group">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x200/111827/e5e7eb?text=ریگ ماینینگ" alt="ریگ ماینینگ"
-                            class="w-full h-48 object-cover">
+                        <img src="/imge/unnamed.png" alt="ریگ ماینینگ" class="w-full h-48 object-cover">
                         <div
                             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
                             <span class="text-white font-bold">مشاهده محصولات</span>
@@ -232,7 +231,7 @@
                 <!-- Product 1 -->
                 <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=PlayStation+5"
+                        <img src="/imge/2020-11-playstation-5-dualsense-accessories-66cc7d0a2b5676090d01ed66.jpeg"
                             alt="PlayStation 5" class="w-full h-64 object-cover">
                         <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">ویژه</div>
                         <button
@@ -265,8 +264,7 @@
                 <!-- Product 2 -->
                 <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Mouse" alt="ماوس گیمینگ"
-                            class="w-full h-64 object-cover">
+                        <img src="/imge/purple-computer-mouse.jpg" alt="ماوس گیمینگ" class="w-full h-64 object-cover">
                         <button
                             class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">
                             <i class="far fa-heart"></i>
@@ -296,7 +294,7 @@
                 <!-- Product 3 -->
                 <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Gaming+Laptop"
+                        <img src="/imge/open-laptop-with-blank-white-screen-against-pink-background.jpg"
                             alt="لپ‌تاپ گیمینگ" class="w-full h-64 object-cover">
                         <div class="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded">جدید</div>
                         <button
@@ -328,7 +326,7 @@
                 <!-- Product 4 -->
                 <div class="product-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
                     <div class="relative">
-                        <img src="https://via.placeholder.com/300x300/111827/e5e7eb?text=Mining+Rig" alt="ریگ ماینینگ"
+                        <img src="/imge/b91534dad986f354d84063ee9fd40ca7.jpg" alt="ریگ ماینینگ"
                             class="w-full h-64 object-cover">
                         <button
                             class="absolute top-2 right-2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-red-600 transition">

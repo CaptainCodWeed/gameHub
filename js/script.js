@@ -91,6 +91,9 @@ thumbnails.forEach(thumb => {
 const searchInput = document.querySelector('.search-input');
 const searchResults = document.querySelector('.search-results');
 
+searchInput.addEventListener('click', function () {
+    searchResults.classList.toggle('hidden');
+});
 searchInput.addEventListener('focus', function () {
     searchResults.style.display = 'block';
 });
@@ -124,3 +127,6 @@ const mainSwiper = new Swiper('.mySwiper', {
         el: '.swiper-scrollbar',
     },
 });
+ //badge conter 
+
+ const heartConter = document.querySelector("#heart span");
